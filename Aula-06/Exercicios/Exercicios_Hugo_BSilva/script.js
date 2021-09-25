@@ -8,14 +8,14 @@ function TrocarImagem01(){
     var img = document.querySelector("#image")
     var text = document.getElementById("#Exercicio03")
 
-    img.setAttribute('src', '../Exercicios/img/img01 (2).jpg')
+    img.setAttribute('src', '../Exercicios_Hugo_BSilva/img/img01 (2).jpg')
 }
 
 function TrocarImagem02(){
     var img = document.querySelector("#image")
     var text = document.getElementById("#Exercicio03")
 
-    img.setAttribute('src', '../Exercicios/img/img01 (3).jpg')
+    img.setAttribute('src', '../Exercicios_Hugo_BSilva/img/img01 (3).jpg')
 }
 
 
