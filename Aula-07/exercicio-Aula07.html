@@ -13,23 +13,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container text-center row">
+    <div class="container text-center flex-row">
         <div class="col-12">
             <h1>Calculadora</h1>
-        <label for="num1">Insira o primeiro número: </label>
-        <input type="text" name="" id="num1">
-        <label for="num2">Insira o segundo número:</label>
-        <input type="text" name="" id="num2">
-        <button id="calcular" onclick="Soma()">+</button>
-        <button id="calcular" onclick="Sub()">-</button>
-        <button id="calcular" onclick="Multi()">X</button>
-        <button id="calcular" onclick="Divisao()">/</button>
-        <button onclick="Limpar()">Limpar</button>
+            <label for="num1">Insira o primeiro número: </label>
+            <input type="text" name="" id="num1">
+            <label for="num2">Insira o segundo número:</label>
+            <input type="text" name="" id="num2"><br>
+
+            <button class="col-sm-1 btn btn-primary mx-1" onclick="Soma()">+</button>
+            <button class="col-sm-1 btn btn-dark mx-1" onclick="Sub()">-</button>
+            <button class="col-sm-1 btn btn-primary mx-1" onclick="Multi()">X</button>
+            <button class="col-sm-1 btn btn-dark mx-1" onclick="Divisao()">/</button>
+            <button class="col-sm-1 btn btn-success mx-1" onclick="Limpar()">Limpar</button><br><br><br>
         </div>        
-        <p class="col-sm-3" id="soma">RESULTADO DA SOMA: </p>
-        <p class="col-sm-3" id="sub">RESULTADO DA SUBTRAÇÃO: </p>
-        <p class="col-sm-3" id="multi">RESULTADO DA MULTIPLICAÇÃO: </p>
-        <p class="col-sm-3" id="divisao">RESULTADO DA DIVISÃO: </p>
+            <p class="col-sm-2 btn btn-primary mx-1" id="soma">RESULTADO DA SOMA: </p>
+            <p class="col-sm-2 btn btn-dark mx-1" id="sub">RESULTADO DA SUBTRAÇÃO: </p>
+            <p class="col-sm-2 btn btn-primary mx-1" id="multi">RESULTADO DA MULTIPLICAÇÃO: </p>
+            <p class="col-sm-2 btn btn-dark mx-1" id="divisao">RESULTADO DA DIVISÃO: </p>
     </div>
     <script src="exercicio-Aula07.js"></script>
 </body>
