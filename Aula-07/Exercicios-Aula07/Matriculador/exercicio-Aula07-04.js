@@ -1,17 +1,27 @@
-
-
+//MOSTRA AS DISCIPLINAS MATRICULADAS NA TEXTAREA
 function Matricular() {
     let disciplinas = document.getElementById('disciplinas').value
-    let array = []
-    //let disciplinasCadastradas = document.getElementById('disciplinasCadastradas').value = `Você está matriculado em: ${disciplinas.replace(' ', ', ')}.`
+    discMatriculadas(disciplinas)
+}
 
-    alert(`${disciplinas}`)
+function discMatriculadas(dados){
+    let array = [dados]
 
-    for (let index = 0; index < disciplinas.length; index++) {
-        let elementos = disciplinas[index].replace(' ', ', ');
-        array = disciplinas[index]
+    if(array == ""){
         console.log(array)
-        //console.log(elementos)
-        let disciplinasCadastradas = document.getElementById('disciplinasCadastradas').value = `Você está matriculado em: ${array}.`
+        alert("Ops... Você não digitou nada, tente novamente !")
     }
+    else{
+        for (let i = 0; i < array.length; i++) {
+            var element = [array[i].split(' ').join(', ')]
+            
+            console.log(`Você está matriculado em: ${element}.`)
+            let disciplinasCadastradas = document.getElementById('disciplinasCadastradas').value = `Você está matriculado em: ${element}.`
+        }
+    }
+}
+
+function Limpar() {
+    let disciplinas = document.getElementById('disciplinas').value = ""
+    let disciplinasCadastradas = document.getElementById('disciplinasCadastradas').value = ""
 }
