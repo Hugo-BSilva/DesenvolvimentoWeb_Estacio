@@ -1,0 +1,129 @@
+*{
+    padding:0; 
+    margin:0;    
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+} 
+body{
+    width: 100%;
+    height: 100vh; 
+    background: #0e1622;
+}
+
+/* MENU DE NAVEGAÇÃO */
+header{
+    color: #e8e7e4;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    list-style: none;
+}
+li{
+    display: flex;
+    padding: 1% 5%;
+}
+li:hover{
+    padding: 1% 5%;
+    background-color: #1e345c;
+    cursor: pointer;
+}
+
+/* CARROSSEL */
+.slide{
+    height: 90vh;
+    width: 100%;
+    max-height: 500px;
+    background-color: black;
+    margin-top: 3%;
+}
+.slide img{
+    height: 90vh;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    object-fit:fill;
+    transition: opacity 900ms;
+}
+
+.slide img.selected{
+    opacity: 1;
+}
+
+
+/* CONTEÚDO */
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container h1{
+    text-align: center;
+    margin-top: 20%;
+    color: #2e5fbc;
+}
+.tables{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 5%;
+}
+#colors td, #colors th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+#colors td, #colors th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#colors tr:nth-child(even){background-color: #e8e7e4; color: #0e1622;}
+#colors tr{background-color: #0e1622; color: #e8e7e4;}
+#colors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2e5fbc;
+    color: white;
+}
+
+
+/* RODAPÉ */
+footer{
+    bottom: 0;    
+    margin-top: 5%;
+    line-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+#rodape{
+    width: 100%;
+    height: 100%;
+    bottom: 0;    
+    text-align: center;
+}
+#redes{
+    padding: 5%;
+    cursor: pointer;    
+    background: #2e5fbc;
+    height: 100%;
+}
+.social-icons{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons a .fa{
+    position: relative;
+    color: #e8e7e4;
+    padding: 5%;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+.social-icons a .fa:hover{
+    color: #1e345c;
+    cursor: pointer;
+    border-bottom: solid 1px #1e345c;
+}
