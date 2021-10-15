@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Dicionario</title>
+</head>
+<body class="bg-dark text-white">
+    <div class="container text-center col-12">
+        <div class="text-center mt-5">
+            <h5>Dicionário Inglês-Português/Português-Inglês</h5> 
+                <div class="col-sm-12">
+                    <label for="palavra" class="col-sm-3">Digite a palavra: </label>
+                    <input type="text" name="palavra" id="palavra" class="col-sm-3">
+                </div>  
+                <div class="col-sm-12">
+                    <label for="traducao" class="col-sm-3"> Tradução: </label>
+                    <input type="text" name="traducao" id="traducao" class="col-sm-3"> <br><br>
+                    <input type="button" value="Traduzir" class="btn btn-info col-sm-6" onclick="traduzir()"><br><br>
+                    <input type="button" value="Limpar" class="btn btn-secondary col-sm-6" onclick="limpar()">              
+                </div>                          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
