@@ -12,10 +12,10 @@
 </head>
 <body class="bg-dark text-info text-center">
     <div class="container mt-2">
-
+        
         <div class="row">
             <a class="col-sm-2 btn btn-info fw-bold" href="incluir.php">Incluir</a>
-            <a class="col-sm-2 btn btn-danger fw-bold" href="excluir.phkp">Excluir</a>
+            <a class="col-sm-2 btn btn-danger fw-bold" href="excluir.php">Excluir</a>
             <a class="col-sm-2 offset-sm-1 btn btn-primary fw-bold" href="index.php">&#127968;</a>
             <a class="col-sm-2 offset-sm-1 btn btn-warning fw-bold" href="alterar.php">Alterar</a>
             <a class="col-sm-2 btn btn-success fw-bold" href="exibir.php">Exibir</a>
@@ -30,7 +30,7 @@
                 </thead>
                 <tbody>
                     <?php
-                    $result = $mysqli->query("SELECT * FROM clientes");
+                    $result = $mysqli->query("SELECT * FROM clientes ORDER BY nome DESC");
                         while ($query = $result->fetch_assoc())
                         {
                         echo "<tr style='font-size:90%;'>";
