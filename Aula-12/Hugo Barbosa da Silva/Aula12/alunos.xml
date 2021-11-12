@@ -1,0 +1,36 @@
+<alunos>
+    <aluno>
+        <nome>João</nome>
+        <email>joao@gmail.com</email>
+    </aluno>
+
+    <aluno>
+        <nome>Jose</nome>
+        <email>jose@gmail.com</email>
+    </aluno>
+
+    <aluno>
+        <nome>Julia</nome>
+        <email>julia@gmail.com</email>
+    </aluno>
+
+    <aluno>
+        <nome>Cris</nome>
+        <email>cris@gmail.com</email>
+    </aluno>
+
+    <aluno>
+        <nome>Viola</nome>
+        <email>viola@gmail.com</email>
+    </aluno>
+
+    <aluno>
+        <nome>Ronaldo</nome>
+        <email>ronaldo@gmail.com</email>
+    </aluno>
+
+    <aluno>
+        <nome>Ana</nome>
+        <email>ana@gmail.com</email>
+    </aluno>
+</alunos>
