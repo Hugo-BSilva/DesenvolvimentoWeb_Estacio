@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
+*{margin:0; padding:0; font-size: 100%; box-sizing: border-box; font-family: 'Roboto', sans-serif; transition: 0.3s;} 
+
+/* Paleta de cores
+#2B2B2B 
+#226566 
+#2E8B8D
+#3AB2B5
+*/
+
+body{
+    background: #111111;
+    display: flex;
+}
+
+.container{
+	margin: 0 auto;
+	display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    margin-top: 5%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2B2B2B;
+    padding: 5%;
+    border-radius: 5px;
+    border: solid #226566 1px;
+}
+
+h1{
+    color: #2E8B8D;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color: #ffffff;
+	font-size: 1.5em;    
+    font-weight: 600;
+    margin: 2%;
+}
+
+input{
+    margin: 2%;
+    background: #2B2B2B;
+    border-radius: 5px;
+    border: solid #3AB2B5 1px;
+    padding: 2%;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+input:invalid{
+    border: solid rgb(136, 24, 24) 1px;
+}
+
+a{
+    margin: 2%;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    color: #3AB2B5;
+}
+
+button{
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+    background: #2E8B8D;
+    border: solid #fff 1px;
+    font-size: 1.5em;  
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;    
+    transition: 0.3s;
+    margin: 2%;
+}
+button:hover{
+    background: #3AB2B5;
+}
