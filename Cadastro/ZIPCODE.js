@@ -22,7 +22,7 @@ function run (event){
     axios.get('https://viacep.com.br/ws/'+ zipCode + '/json/')
     .then(function (response){
         if (response.data.error) {
-            throw new Error('CEP inválido')
+            throw new Error('Invalid zip code')
         }
 
         street.value = response.data.logradouro
@@ -32,10 +32,10 @@ function run (event){
     .catch(function (error){
         console.log(error)
         if(zipCode == '' ){
-            alert('Ops você não digitou um CEP, tente novamente')
+            alert("You didn't enter a zip code, try again!")
         }
         else{
-            alert('Ops cep inválido, tente novamente!')
+            alert('Invalid zip code, try again!')
         }
     })
 }

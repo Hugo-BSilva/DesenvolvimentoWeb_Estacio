@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
-    <title>Register</title>
+    <title>Register New DEVS</title>
 </head>
 <body>
     <div class="container">
         <form onsubmit="return false">
+
             <h1><i class="fa fa-code"> Register New Developer </i></h1>
 
             <div class="personalDatas">
@@ -31,7 +32,9 @@
                 <i class="fa fa-envelope-open"> <label for="email">E-mail: </label> </i>
                 <input type="email" name="" id="" class="texts"><br>
             </div>
+
             <hr>
+
             <div class="personalDatas">
                 <i class="fa fa-map-marker"> <label for="cep">Zip Code:</label> </i>
                 <input type="text" name="cep" id="cep" class="texts"><br>
@@ -41,14 +44,16 @@
                 <input type="text" name="neighborhood" id="neighborhood" class="texts"><br>
                 <i class="fa fa-building"> <label for="cityState">City and State:</label> </i>
                 <input type="text" name="cityState" id="cityState" class="texts"><br>
-                <button id="consultarCEP" class="buttonSubmit">Consultar</button> <br>
+                <button id="consultarCEP" class="buttonSubmit">Consult</button> <br>
             </div>
+
             <hr><br>
+
             <div class="tech">
                 <i class="fa fa-code-fork"> <label for="technologies">Technologies:</label></i><br> 
                 <input type="checkbox" name="" id="" class="checkbox"> PHP <br>
                 <input type="checkbox" name="" id="" class="checkbox"> .NET <br>
-                <input type="checkbox" name="" id="" class="checkbox"> JavaScript <br>
+                <input type="checkbox" name="" id="" class="checkbox"> JavaScript <br> 
                 <input type="checkbox" name="" id="" class="checkbox"> Java <br>
                 <input type="checkbox" name="" id="" class="checkbox"> Python <br>
                 <input type="checkbox" name="" id="" class="checkbox"> HTML + CSS <br>
@@ -59,12 +64,16 @@
                 <input type="checkbox" name="" id="" class="checkbox"> SQL Server <br>
                 <input type="checkbox" name="" id="" class="checkbox"> MongoDB <br>
                 <input type="checkbox" name="" id="" class="checkbox"> AWS <br>
-            </div>               
-            <button class="buttonSubmit">Register</button>           
+            </div>  
+
+            <button class="buttonSubmit">Register</button>   
+
         </form>
+
     </div>
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="CEP.js"></script>
+    <script src="ZIPCODE.js"></script>
     <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
